@@ -1,0 +1,8 @@
+#counts the number of times aspecified number is present in a sequence
+
+def count(sequence, item):
+    sum = 0
+    for i in sequence:
+        if i == item:
+            sum += 1
+    return sum
