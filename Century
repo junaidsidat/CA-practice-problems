@@ -1,0 +1,23 @@
+# print numbers from 1-100
+# print numbers alongside their square values
+# app should stop when a squared value of 200 or more is reached
+# app should allow for user input to produce square values
+
+# prints numbers from 1-100
+for number in range(101):
+    print(number)
+
+# prints numbers 1-100 alongside their square values
+for number in range(101):
+    square_number = number ** 2
+    if square_number > 200:
+        break
+print(number, square_number)
+
+# asks for user input and then squares values up to the value of the input
+input_number = int(input('Enter number here: '))
+for number in range(1, input_number + 1):
+    square_number = number ** 2
+    if square_number > 200:
+        break
+    print(number, square_number)
