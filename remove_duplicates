@@ -1,0 +1,8 @@
+#remove duplicates from a list
+
+def remove_duplicates(elements):
+    new_list = []
+    for element in elements:
+        if element is not in new_list:
+            new_list.append(element)
+    return new_list
