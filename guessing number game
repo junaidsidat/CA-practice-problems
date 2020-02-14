@@ -1,0 +1,18 @@
+from random import randint
+
+random_number = randint(0, 10) #generates a random number from 1-10 inclusive
+
+guesses_left = 3  # gives the user 3 guesses
+
+while guesses_left > 0:
+    guess = int(input('enter guess: '))
+    if guess == random_number:
+        print('You win!')
+        break
+    guesses_left -= 1
+else:
+        print('You lose!')
+    
+
+# gives the user 3 guesses and if the guess is the same as the random_number
+# the game prints 'you win'. after 3 guesses the game prints 'you lose'.
